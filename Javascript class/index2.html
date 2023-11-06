@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const obj1 = {name:"khushi", age: 20, role:"student"};  // object literals
+        console.log(obj1.name); //khushi
+        console.log(obj1["name"]);
+
+        for(let x in  obj1)
+        {
+            console.log(x); // name age role
+        }
+
+        for(let x in obj1)
+        {
+            console.log(obj1[x]); // khushi 20 student
+        }
+        class sample
+        {
+            b=200;
+            def()
+            {
+                console.log("M2");       
+            }
+        }
+
+        class Demo extends sample
+        {
+            // constructor()
+            // {
+            //      super();  // need to explicitely call super constrictor
+            //     console.log("cons");
+            // }
+
+            a =10;
+            abc(){
+                console.log("M1");
+            }
+        }
+
+        const obj2 = new Demo();
+        console.log(obj2.a); //10
+        obj2.abc(); //M1
+ 
+
+        const d = new Date();
+        console.log(d.getDate());
+        console.log(d.getDay()); //0-sun 3-wed 6-sat
+        console.log(d.getMonth()+1); // 0-jan 8-sept 11 dec
+    </script>
+</body>
+</html>
+
+

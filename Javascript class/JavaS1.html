@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function f1(a=0)
+        {
+            if(a>5)
+            {
+                console.log("Greater than 5");
+            }
+        }
+        f1(10);  //Greater than 5
+        f1(3); //No output
+        f1(); //No output
+
+
+        function f2(a=0)
+        {
+            if(a>0) //0>0 //false
+            {
+                console.log("Positive number");
+            }
+            else
+            {
+                console.log("Negative number");
+            }
+        }
+        f2(10); //Positive number
+        f2(-13); //Negative number
+        f2(); //Negative number
+
+
+        function f3(a=0,b=0)
+        {
+            if(a>b)
+            {
+                console.log("a is greater");
+            }
+            else if(a==b)
+            {
+                console.log("a is equals to b");
+            }
+            else
+            {
+                console.log("b is greater");
+            }
+        }
+
+
+        f3(10,20); //b is greater
+        f3(30,10); //a is greater
+        f3();   //a is equals to b
+
+
+        function f4(a)
+        {
+            if(a>10)
+            {
+                if(a<20)
+                {
+                    console.log("a is in the range of 10 to 20");
+                }
+                else
+                {
+                    console.log("Exceeding the limit");
+                }
+            }
+            else
+            {
+                console.log("Invalid number");
+            }
+        }
+
+
+        f4(15); //a is in the range of 10 to 20
+        f4(9);  //Invalid number
+        f4(80);  //Exceeding the limit
+
+
+        function f5(a)
+        {
+            if(a>5)
+            {
+                console.log("Hi");
+            }
+            if(a>10)
+            {
+                console.log("Hello");
+            }
+        }
+        f5(7); //Hi
+        f5(4); //No output
+        f5(23); //Hi Hello
+
+
+        function f6(a)
+        {
+            switch(a)
+            {
+                case 1:
+                    console.log("A");
+                    break;
+                case 2:
+                    console.log("B");
+                    break;
+                case 3:
+                    console.log("C");
+                    break;
+                case 4:
+                    console.log("D");
+                    break;
+                default:
+                    console.log("Try again..");
+            }
+        }
+        f6(3); //C
+        f6(4); //D
+
+
+
+
+    </script>
+</body>
+</html>
+
+

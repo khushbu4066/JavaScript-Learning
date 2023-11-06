@@ -1,0 +1,39 @@
+Express JS server side programming
+Express JS is a Javascript framework
+
+NodeJS - Runtime environment
+
+----------------------------------------------------------------------
+
+Step 1:
+    Create a package.json by using command
+    npm init -y
+
+Step 2: 
+    Create a index.js file
+
+Step 3: 
+    Install the necessary modules
+    npm install express
+    npm install nodemon
+    npm install mongoose@6.9.1
+
+    (or)
+    npm install express nodemon mongoose@6.9.1
+
+Step 4: 
+    Modification in the package.json file 
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    }
+    Replace the test with 
+    "scripts": {
+        "start": "nodemon index.js"
+    }
+
+Step 5: 
+    Start coding in index.js file 
+
+Step 6: 
+    To run the server give a command as npm start 
+

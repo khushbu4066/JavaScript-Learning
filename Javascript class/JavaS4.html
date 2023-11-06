@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+        console.log("Unary operators");
+        let a = 10;
+        let b = 15;
+
+
+        console.log("Increment operators");
+        console.log(a++); //10
+        console.log(a); //11
+       
+        console.log("Decrement operators");
+        console.log(--b); //14
+        console.log(b); //14
+
+
+        console.log("Binary operators");
+        a=10;
+        b=3;
+        console.log("Arithmetic operators");
+        console.log(a+b); //13
+        console.log(a-b); //7
+        console.log(a*b); //30
+        console.log(a%b); //1
+        console.log(a/b); //3.333
+        b=0;
+        console.log(a/b); //Infinity
+        b=undefined;
+        //10+undefined => NaN -> Not a Number
+        console.log(a+b); //NaN
+
+
+        console.log("Assignment operators");
+        a = 10;
+        b = 20;
+        console.log(a+=b); //a=a+b => 10+20 =>a=30 //30 //a=30
+        console.log(a-=b); //a =a -b// a =30-20 = 10 //a=10
+        console.log(a*=b); //200 //a=200
+        console.log(a%=b); //0   //a=0
+        console.log(a/=b); //0   //a=0
+
+
+        console.log("Relational operators");
+        a = 30;
+        b = 40;
+        console.log(a<b); //true
+        console.log(a>b); //false
+        console.log(a<=b); //true
+        console.log(a>=b); //false
+        console.log(a==b); //false
+        console.log(a!=b); //true
+
+
+        //== is used check only the value
+        //=== is used to check both type and value
+        b="30";
+        console.log(a==b); //true
+        console.log(a===b); //false
+
+
+        console.log("Logical operators");
+        a =true;
+        b=false;
+        console.log(a && b); //false
+        console.log(a || b); //true
+        console.log(!a); //false
+
+
+        console.log("Bitwise operators");
+        a=11;
+        b=7;
+        console.log(a&b); //3
+        /*
+        11 -> 1 0 1 1
+         7 -> 0 1 1 1 (&)
+         ------------------
+              0 0 1 1 -> 3
+        */
+        console.log(a|b); //15
+        /*
+        11 -> 1 0 1 1
+         7 -> 0 1 1 1 (|)
+         ------------------
+              1 1 1 1 -> 15
+        */
+
+
+        console.log(a^b); //12
+        /*
+        11 -> 1 0 1 1
+         7 -> 0 1 1 1 (^)
+         ------------------
+              1 1 0 0 -> 12
+        */
+        console.log(~a); //-12 //increment by 1 and change the sign
+
+
+
+
+        console.log("Shift operators");
+        a = 10;
+        b = 3;
+        console.log(a<<b); //80
+        /*
+        Left shift formula: a*(2^b)
+        10*(2^3)-> 10*8 = 80
+        */
+
+
+        console.log(a>>b); //1
+        /*
+        Right shift formula: a/(2^b)
+        10/(2^3)-> 10/8 = 1
+        */
+        console.log("Ternary operators");
+        console.log((10<20)?"Hi":"Bye");
+
+
+    </script>
+</body>
+</html>
+
+

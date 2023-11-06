@@ -1,0 +1,120 @@
+JAvascript 
+1. is a programming language
+2. used to make web pages dynamic
+3. initialy known as Livescript 
+4. versions: ES versions
+5. latest ES9. Most widely used is ES6
+6. In ES5 and ES6 there is so many add on features are avilable.
+7. JS is a Case-sensitive and 
+8. JS is Interpreter based language
+9. loose coupled language
+
+
+Ways to work with js:
+1. Internal scripting  -- In the same HTML file
+2. External Scripting -- Seperate JS file will be attached with 
+current HTML file with the help of Script Tag Src attribute.
+
+Multiple Ways to display the output-
+1. alert("Message") : in dialog box
+2. document.write("message");  - new page
+document.getElementById("idname").innnerHTML="message;"  -- same page
+console.log("Message"):  -- in console window
+
+JavaScript variables --
+Syntex
+keyword varName = value;
+
+the varname begins with lowercase letters
+
+javascript keywords create a variable 
+1. var -> Global scope -> Accesible from anywhere
+2. let -> local sxope ->
+3. const ->
+
+in Java - tightly coupled
+int a = 10;
+a = "hello" // Error - type mismatch
+
+in jS
+int a = 10;
+a = "hello" ; // Not giving any errror
+
+JacaScript Datatypes:
+1. String -> includes characters -> donated as '' or "" or `` [template literals]
+2. number -> includes whole and decimal number
+3. null ->
+4. boolean
+5. undefined
+
+
+JS Functions:
+syntax:-
+
+function functionName(argument){
+}
+
+bydefault function type will be undefined
+we can have two type functions
+1. with arguments
+2. without argument
+
+EVents in JS:-
+
+1. onclick --> the normal button is clicked
+2.  onsubmit -> the submit botton is clicked
+3. onfocus ->  when the I beam is present inside the box. 
+4. onblur -> when the cursor is clicked ouside the input box.
+5. onkeyup - the key is released
+6. onchange - there is the change in input field.
+
+JAvaScript Operators:-
+
+1. Unary
+ - Increment -> Pre[++a] and post [a++]
+ - Decrement -> Pre[--a] and post [a--]
+2.  Binary
+3. Ternary
+
+Conditional Statement
+
+If
+if else
+else if
+nested if
+if ladder
+switch
+
+Looping  Statements:
+for 
+while
+do while
+for in loops  // accessing the properties of an object
+for of loops
+for each loops
+
+
+Loop Control Statement
+break 
+continue
+
+JavaScript Objects:
+Ways to create js Objects
+1. object literals
+{prop1: "val1", prop2: "val2"}
+
+2. new keyword
+
+Acess tyhe Objects
+1. dot Operators
+2. square brackets
+
+JAvascript Classes
+
+syntax:
+class classname
+{
+    
+}
+
+ Javascript Arrays

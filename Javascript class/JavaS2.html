@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name= viewport,  content="width-device-width , intial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <center>
+            <form action="https://classroom.google.com/" onsubmit="return validate()" class="form m-5">
+                <table>
+                    <tr>
+                        <td class="text-center"><h3>Gmail Login</h3></td>
+                    </tr>
+                    <tr>
+                        <td><p id="invalid-msg"></p></td>
+                    </tr>
+                    <tr>
+                        <td><input id="un" class="form-control my-2" type="text" placeholder="Username"  required/></td>
+                    </tr>
+                    <tr>
+                        <td><input id="pwd" class="form-control my-2" type="password" placeholder="Password" required /></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center"><button type="submit" class="my-2 btn btn-primary">Log In</button></td>
+                    </tr>
+                </table>
+            </form>
+        </center>
+
+        <script>
+            function validate()
+            {
+                var un= document.getElementById("un").value;
+    
+                var pwd= document.getElementById("pwd").value;
+                // alert(un);
+                // alert(pwd); 
+                if(un.length < 5 || pwd.length<5){
+
+                    document.getElementById("invalid-msg").innerHTML = `<p class="alert alert-danger">Invalid username or password</p>`;
+
+                        return false;
+                }
+                return true;
+            }
+
+        </script>
+    </body>
+</body>

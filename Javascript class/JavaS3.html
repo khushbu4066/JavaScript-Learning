@@ -1,0 +1,48 @@
+<!--Second Class-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input onfocus="myFocus()" onblur="myBlur()" onkeyup="checkStrength()" id="i1" type="password" placeholder="Enter your password" />
+    <span id="msg"></span>
+
+
+    <script>
+
+
+        function myFocus()
+        {
+            document.getElementById("i1").style.backgroundColor = "red";
+        }
+
+
+        function myBlur()
+        {
+            document.getElementById("i1").style.backgroundColor = "blue";
+        }
+
+
+        function checkStrength()
+        {
+            let pwd = document.getElementById("i1").value;
+            if(pwd.length == 0)
+            {
+                document.getElementById("msg").innerHTML = "No strength";
+            }
+            else if(pwd.length < 5)
+            {
+                document.getElementById("msg").innerHTML = "Weak";
+            }
+            else{
+                document.getElementById("msg").innerHTML = "Strong";
+            }
+        }
+    </script>
+</body>
+</html>
+
+
