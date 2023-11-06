@@ -1,3 +1,3 @@
 # JavaScript Learning
 
-This repository contains the all the concepts of JAVASCRIPT, which I am going to learn in my JS Journey.
+THIS REPO HAS ALL THE IMP CONCEPTS WHICH ARE USED IN JAVASCRIPT.
